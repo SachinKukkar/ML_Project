@@ -1,0 +1,168 @@
+/* === Global Styles === */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+}
+
+/* === Container === */
+.login {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 50px 60px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+  color: white;
+  width: 450px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.login:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.35);
+}
+
+/* === Headings === */
+h1 legend {
+  font-size: 1.9rem;
+  margin-bottom: 35px;
+  color: #fff;
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* === Labels === */
+.form-label {
+  display: block;
+  text-align: left;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #e8e8e8;
+  font-size: 0.95rem;
+}
+
+/* === Inputs & Selects === */
+.form-control {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-bottom: 25px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  transition: all 0.3s;
+  appearance: none; /* clean dropdown style */
+}
+
+/* === FIX: Proper visibility for dropdowns === */
+select.form-control {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.18);
+}
+
+/* make dropdown options visible */
+select.form-control option {
+  color: #000; /* dark text inside dropdown list */
+  background-color: #fff; /* white dropdown background */
+}
+
+/* when user selects something */
+.form-control:focus {
+  background: rgba(255, 255, 255, 0.28);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+/* === Button === */
+.btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* === Prediction Result === */
+h2 {
+  margin-top: 35px;
+  padding: 15px;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 500;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
+/* === Mobile Responsive === */
+@media (max-width: 480px) {
+  .login {
+    width: 90%;
+    padding: 30px 25px;
+  }
+
+  h1 legend {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+}
+/* ---- Improved Dropdown Styling (Keep rest of CSS same) ---- */
+
+select.form-control {
+    background-color: #f0f4ff;  /* light blue-gray tone */
+    color: #222;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+/* When user focuses or opens the dropdown */
+select.form-control:focus {
+    background-color: #e6f0ff;  /* slightly brighter blue */
+    border-color: #4a90e2;
+    box-shadow: 0 0 6px rgba(74, 144, 226, 0.5);
+    outline: none;
+    color: #111;
+}
+
+/* The dropdown list items */
+select.form-control option {
+    background-color: #f8fbff;
+    color: #222;
+}
+
+/* Hovered option (for supported browsers) */
+select.form-control option:hover,
+select.form-control option:checked {
+    background-color: #4a90e2 !important;
+    color: #fff !important;
+}

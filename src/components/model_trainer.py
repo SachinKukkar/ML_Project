@@ -47,7 +47,7 @@ class ModelTrainer:
                 "Linear Regression" :LinearRegression(),
                 "K-Neighbours Regressor":KNeighborsRegressor(),
                 "XGBRegressor" : XGBRegressor(),
-                "CatBoosting Regressor" : CatBoostRegressor(verbose=False),
+                "CatBoost Regressor" : CatBoostRegressor(verbose=False),
                 "AdaBoost Regressor" : AdaBoostRegressor()
             }
             
@@ -76,12 +76,12 @@ class ModelTrainer:
                 "Linear Regression" : {},
 
                 "K-Neighbours Regressor":{
-                    'n_neighbours' : [5,7,9,11],
+                    'n_neighbors' : [5,7,9,11],
                     # 'weights' : ['uniform','distance'],
                     # 'algorithm' : ['ball_tree','kd_tree','brute']
                 },
 
-                "XGBoost Regressor" : {
+                "XGBRegressor" : {
                     'learning_rate'  : [0.1,0.01,0.05,0.001],
                     'n_estimators' : [8,16,32,64,128,256]
                 },
